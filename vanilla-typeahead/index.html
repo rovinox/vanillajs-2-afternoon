@@ -84,6 +84,17 @@
 </body>
 
 <script>
+
+    let characters = []
+
+    fetch('https://www.swapi.co/api/people')
+    .then(response => response.json())
+    .then(response => characters.push(...response.results))
+
+console.log(characters);
+
+
+
 </script>
 
 </html>
